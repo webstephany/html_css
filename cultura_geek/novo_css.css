@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* background-color: #BD76CB, #551C6F, */
+/* colore o fundo da página, usando hexadecimal e 
+    podemos colocar o background-image para colocar mais cores na pagina */
+
+:root {
+  --fundtela: #f7c9d5c9;
+  --desttexto: #9c4949b7;
+  --linktela: #de9ca5c7;
+  
+  --cortxt:#693851;
+  --cortxt1:#eccddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+   /* font-family: 'Courier New', Courier, monospace; 
+   font-family: 'Times New Roman', Times, serif;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   */
+   font-family: 'Times New Roman', Times, serif;
+   height: 100vh;
+   font-size: 15px;
+  }
+
+body {
+  text-align: justify;
+  color: var(--cortxt) ;
+  background-image: linear-gradient(to left bottom, #769edb, #5b21a7);
+  background-image: url("/wlp4k.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+header{
+  width: 100vw;
+  height: 10vh;
+  background-color: #aa5e68cb;
+}
+
+h1{
+ 
+  text-shadow: 2px 2px 5px var(--fundtela);
+  padding: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+h2{
+  padding: 0.9em;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  text-shadow: 2px 2px 5px var(--desttexto);
+}
+
+menu,
+ul {
+  text-align: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--desttexto);
+  color: #ffffffdc;
+  list-style-type: none;
+  color: var(--textocor2);
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  /* padding: 1.5em; 
+  margin: 5px;*/
+}
+
+li {
+  color: #693851;
+  list-style: none;
+  display: inline-block;
+}
+
+article{
+margin: 15px;
+}
+
+p{
+    margin: 15px;
+  /* text-indent: 3.3em; 
+  vai criar uma margin parecida com as folhas do caderno
+  */
+}
+
+section {
+  
+  width: 100vw;
+  height: auto;
+  background-color: var(--linktela);
+}
+
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 0px;
+  margin: 20px;
+}
+
+footer {
+  text-align: left;
+  width: 20vw;
+  height: 16px;
+  background-color: #f7c9d57e;
+} 
+
+
+
+button{
+  margin: 0 5px;
+  background-color: var(--linktela);
+  width: 13vw;
+  height: 4vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  background-color: var(--linktela);
+  }
+
+  button:hover{
+    background-color: var(--fundtela);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  }
+
+  button:active {
+    transform: scale(0.95); /* diminui quando clica */
+     transition: transform 0.1s ease-in-out; /*tempo de clique */
+  }
+  
